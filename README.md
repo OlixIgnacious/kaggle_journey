@@ -12,7 +12,7 @@ I want to build practical, portfolio-ready machine learning skills by solving re
 ## Commitment
 
 - Time: **8–10 hours per week**
-- Start date: **2025-03-01**  <!-- adjust as needed -->
+- Start date: **2025-03-01**  
 - Cadence:
   - Weekly: at least one focused study / experiment block
   - Monthly: consolidate learnings, clean up best notebooks, and update this README
@@ -21,22 +21,18 @@ I want to build practical, portfolio-ready machine learning skills by solving re
 
 By 12 months from the start date, I aim to:
 
-- Complete **5–8 Kaggle competitions** end-to-end (from data understanding to submission).
-- Achieve at least **top 25–30%** on at least one competition.
-- Build a reusable mini-ML toolkit in `src/` (data loading, validation, feature pipelines, model training).
-- Curate **2–3 polished case studies** that can be shared publicly (e.g., portfolio / blog).
-
+	•	Achieve Kaggle Expert minimum.
+	•	Complete at least 8 competitions fully.
+	•	Earn minimum 1 medal (bronze or higher).
+	•	Build 3 portfolio-grade notebooks.
 ## Month 1 Objective
 
-For the first month, the focus is on foundations and workflow:
-
-- Set up the repo structure, environments, and data pipelines.
-- Fully complete **1 small-to-medium Kaggle competition** or dataset (e.g., Titanic, House Prices, Tabular Playground).
-- Produce:
-  - 1 solid EDA notebook
-  - 1 baseline model notebook
-  - 1 improved model notebook with basic cross-validation and feature engineering
-- Document key learnings and pain points in `reports/`
+Month 1 =
+	•	Python fundamentals
+	•	Pandas fundamentals
+	•	Basic ML pipeline
+	•	One clean Titanic notebook
+	•	Structured GitHub discipline
 
 ## Project Goals
 
@@ -47,17 +43,17 @@ For the first month, the focus is on foundations and workflow:
 
 ## Repository Structure
 
-> Actual folders may differ; adapt as needed.
-
-- `notebooks/` – Jupyter notebooks for EDA, modeling, and experiments.
-- `experiments/` – Scripts/configs for reproducible runs.
-- `src/` – Reusable Python modules (data loading, features, models, utils).
-- `data/` – Local data (typically excluded from git via `.gitignore`).
-  - `raw/` – Original Kaggle datasets.
-  - `processed/` – Cleaned / feature-engineered data.
-- `models/` – Saved models, predictions, and submission files.
-- `configs/` – Experiment or model configuration files.
-- `reports/` – Generated reports, figures, and notes.
+kaggle-journey/
+│
+├── month1/
+│   ├── week1/
+│   ├── week2/
+│   ├── week3/
+│   └── week4/
+│
+├── datasets/
+├── notebooks/
+└── README.md
 
 ## Getting Started
 
