@@ -16,13 +16,26 @@ def compute_minimum(nums):
             min_value = num
     return min_value
 
+# Step 3 - Compute maximum
+def compute_maximum(nums):
+    if not nums:
+        return None
+    
+    max_value = nums[0]
+    for num in nums:
+        if num > max_value:
+            max_value = num
+    return max_value
+
 
 # Step 3 - Compute mean
 def compute_mean(nums):
     if not nums:
         return None
     
-    total_sum = sum(nums)
+    total_sum = 0
+    for num in nums:
+        total_sum += num
     count = len(nums)
     mean_value = total_sum / count
     return mean_value
@@ -34,8 +47,8 @@ def numbers_above_mean(nums):
         return []
     
     mean_value = compute_mean(nums)
-    numbers_above_mean = [num for num in nums if num > mean_value]
-    return numbers_above_mean
+    numbers_above_list = [num for num in nums if num > mean_value]
+    return numbers_above_list
 
 
 if __name__ == "__main__":
@@ -45,6 +58,9 @@ if __name__ == "__main__":
 
     minimum_value = compute_minimum(numbers)  
     print("Minimum value:", minimum_value)
+
+    maximum_value = compute_maximum(numbers)
+    print("Maximum value:", maximum_value)
     
     mean_value = compute_mean(numbers)
     print("Mean value:", mean_value)
