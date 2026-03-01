@@ -35,11 +35,11 @@ Month 1 =
 	•	Structured GitHub discipline
 
 ## Project Goals
+	•	12-month ambition
+	•	Month 1 narrow focus
+	•	Zero advanced pipeline language
+	•	Zero “utilities” language
 
-- Document learning progress on Kaggle.
-- Maintain reproducible experiments.
-- Build reusable utilities for EDA, feature engineering, and modeling.
-- Track best-performing approaches and ideas for future competitions.
 
 ## Repository Structure
 
