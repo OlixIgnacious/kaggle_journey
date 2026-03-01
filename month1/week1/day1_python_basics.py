@@ -11,7 +11,7 @@ def compute_minimum(nums):
         return None
     
     min_value = nums[0]
-    for num in nums:
+    for num in nums[1:]:
         if num < min_value:
             min_value = num
     return min_value
@@ -22,7 +22,7 @@ def compute_maximum(nums):
         return None
     
     max_value = nums[0]
-    for num in nums:
+    for num in nums[1:]:
         if num > max_value:
             max_value = num
     return max_value
@@ -50,6 +50,23 @@ def numbers_above_mean(nums):
     numbers_above_list = [num for num in nums if num > mean_value]
     return numbers_above_list
 
+def compute(nums):
+    if not nums:
+        return None
+    min_value = nums[0]
+    max_value = nums[0]
+    total_sum = nums[0]
+    for num in nums[1:]:
+        total_sum += num
+        if num < min_value:
+            min_value = num
+        if num > max_value:
+            max_value = num
+    mean_value = total_sum / len(nums)
+
+    return min_value, max_value, mean_value
+
+
 
 if __name__ == "__main__":
     # Generate random numbers
@@ -67,3 +84,7 @@ if __name__ == "__main__":
 
     above_mean_numbers = numbers_above_mean(numbers)
     print("Numbers above mean:", above_mean_numbers)
+    min_value, max_value, mean_value = compute(numbers)
+    print("Minimum value:", min_value)
+    print("Maximum value:", max_value)
+    print("Mean value:", mean_value)
